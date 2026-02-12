@@ -5,21 +5,21 @@
 class Haiphen < Formula
   desc "Haiphen CLI — local gateway and command center for edge protocol intelligence"
   homepage "https://haiphen.io"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/haiphenAI/haiphen-cli/releases/download/v0.2.0/haiphen_0.2.0_darwin_amd64.tar.gz"
-      sha256 "d80f2062866d58dd3e94961880744e4589f370f98abe2c5a2ae6c7fa9277f44d"
+      url "https://github.com/haiphenAI/haiphen-cli/releases/download/v0.2.1/haiphen_0.2.1_darwin_amd64.tar.gz"
+      sha256 "ec356bd432f6c93b53f097fed6fc106af8e958ca9b1ce7473fbe4e461c977636"
 
       def install
         bin.install "haiphen"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/haiphenAI/haiphen-cli/releases/download/v0.2.0/haiphen_0.2.0_darwin_arm64.tar.gz"
-      sha256 "85fefd5ad74a4012b1c3da8d805d2b1d9cc14df1a3a57703f886cea1d3e5856a"
+      url "https://github.com/haiphenAI/haiphen-cli/releases/download/v0.2.1/haiphen_0.2.1_darwin_arm64.tar.gz"
+      sha256 "dd3a4eee10b991ea5207d3c00a169607398f11301b228d02ee57114cf4ddfca7"
 
       def install
         bin.install "haiphen"
@@ -29,15 +29,15 @@ class Haiphen < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/haiphenAI/haiphen-cli/releases/download/v0.2.0/haiphen_0.2.0_linux_amd64.tar.gz"
-      sha256 "3b93ac5ddbd9b6a1ce53112f6bc54136d884c1e48892a834a33f8e5d6fb1fb22"
+      url "https://github.com/haiphenAI/haiphen-cli/releases/download/v0.2.1/haiphen_0.2.1_linux_amd64.tar.gz"
+      sha256 "552efca8e51db7f9d36a29833756aa43c6481f650be7f5a0f4cb3f1c0a03fdd9"
       def install
         bin.install "haiphen"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/haiphenAI/haiphen-cli/releases/download/v0.2.0/haiphen_0.2.0_linux_arm64.tar.gz"
-      sha256 "c3608018ae149fc972be9993cca731bc5fba3389c62fa6bb922347f699447fd4"
+      url "https://github.com/haiphenAI/haiphen-cli/releases/download/v0.2.1/haiphen_0.2.1_linux_arm64.tar.gz"
+      sha256 "2d8670799477c261a26d20a1cde5593030815ead9307f8022cb17df2ffabc010"
       def install
         bin.install "haiphen"
       end
