@@ -14,13 +14,8 @@ class Haiphen < Formula
     end
   end
 
-  on_linux do
-    url "https://github.com/haiphenAI/haiphen-cli/releases/download/v0.2.6/haiphen_0.2.6_linux_amd64.tar.gz"
-    sha256 "b691c17d022c7a9a0f150fd297377111354394e3aada50515c2a8c698b580321"
-  end
-
   def install
-    bin.install Dir["haiphen"].first => "haiphen"
+    bin.install "haiphen"
   end
 
   test do
