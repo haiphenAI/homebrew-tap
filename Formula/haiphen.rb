@@ -1,22 +1,22 @@
 class Haiphen < Formula
   desc "Local gateway + CLI for Haiphen"
   homepage "https://github.com/haiphenAI/haiphen-cli"
-  version "0.2.5"
+  version "0.2.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/haiphenAI/haiphen-cli/releases/download/v0.2.5/haiphen_0.2.5_darwin_arm64.tar.gz"
-      sha256 "51bc00511fcde5bb0e931f9e721e642b18fffcf8fa5985890e724697bd694e61"
+      url "https://github.com/haiphenAI/haiphen-cli/releases/download/v0.2.6/haiphen_0.2.6_darwin_arm64.tar.gz"
+      sha256 "574aabc0924625bb21c70b6d64f94dfe9f3b7acd8deb51cd4f47b791c71c7443"
     else
-      url "https://github.com/haiphenAI/haiphen-cli/releases/download/v0.2.5/haiphen_0.2.5_darwin_amd64.tar.gz"
-      sha256 "e7e4ca3e3bdeaa46610c42114808338aefb933f9aa59bd24a8c4d3374f3f82a4"
+      url "https://github.com/haiphenAI/haiphen-cli/releases/download/v0.2.6/haiphen_0.2.6_darwin_amd64.tar.gz"
+      sha256 "e7143b5d553cd15e69f20da20cf450ff4bdd632bc4445fb32b9f37a7e5dc8515"
     end
   end
 
   on_linux do
-    url "https://github.com/haiphenAI/haiphen-cli/releases/download/v0.2.5/haiphen_0.2.5_linux_amd64.tar.gz"
-    sha256 "8a73901af48aee1060e8d3c0c46811402f58b1928a13cb71d5e7d8d1cdf672b1"
+    url "https://github.com/haiphenAI/haiphen-cli/releases/download/v0.2.6/haiphen_0.2.6_linux_amd64.tar.gz"
+    sha256 "b691c17d022c7a9a0f150fd297377111354394e3aada50515c2a8c698b580321"
   end
 
   def install
