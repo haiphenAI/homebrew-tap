@@ -11,7 +11,7 @@ class Haiphen < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/haiphenAI/haiphen-cli/releases/download/v0.2.10/haiphen_0.2.10_darwin_amd64.tar.gz"
-      sha256 "d9853c1efcd3a7037f13fb14cfbabed588b20ae0441637ce8f1a07f6585a128e"
+      sha256 "2a2d90e0fdc34635a2b51f96ae36430adf40606002e920fbcc1e340e36188443"
 
       define_method(:install) do
         bin.install "haiphen"
@@ -19,7 +19,7 @@ class Haiphen < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/haiphenAI/haiphen-cli/releases/download/v0.2.10/haiphen_0.2.10_darwin_arm64.tar.gz"
-      sha256 "a5003266441cb2eae652a30c5f7f1ac665382f274b87c5dea11bd9f7ad168569"
+      sha256 "5cd8e35a1b0ab9eca11edcb60b49c85f489462b97f59adbea19865543310aac5"
 
       define_method(:install) do
         bin.install "haiphen"
@@ -30,14 +30,14 @@ class Haiphen < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/haiphenAI/haiphen-cli/releases/download/v0.2.10/haiphen_0.2.10_linux_amd64.tar.gz"
-      sha256 "da98a38cdbb993d57d6fb201b4537129fcdcada6096d2cf4666a5ba875169234"
+      sha256 "0d15121994c1170e65e2c3027a048471303d63cb7dfa944a062c8215193ead82"
       define_method(:install) do
         bin.install "haiphen"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/haiphenAI/haiphen-cli/releases/download/v0.2.10/haiphen_0.2.10_linux_arm64.tar.gz"
-      sha256 "adf22bbe044d875f32be41c238426ab6ca9b3b733a5354ec54525126ca3b7535"
+      sha256 "94c2b99017977f4136ba3bc66c991e6edd1d8625f42dd49346d2d956ad4f808d"
       define_method(:install) do
         bin.install "haiphen"
       end
