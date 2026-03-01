@@ -5,23 +5,23 @@
 class Haiphen < Formula
   desc "Haiphen CLI — local gateway and command center for edge protocol intelligence"
   homepage "https://haiphen.io"
-  version "0.2.9"
+  version "0.2.10"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/haiphenAI/haiphen-cli/releases/download/v0.2.9/haiphen_0.2.9_darwin_amd64.tar.gz"
-      sha256 "e6bfc29d7996b988fd4f627ef665e53a27d1475fd47b0850892a40ba91f6daca"
+      url "https://github.com/haiphenAI/haiphen-cli/releases/download/v0.2.10/haiphen_0.2.10_darwin_amd64.tar.gz"
+      sha256 "d9853c1efcd3a7037f13fb14cfbabed588b20ae0441637ce8f1a07f6585a128e"
 
-      def install
+      define_method(:install) do
         bin.install "haiphen"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/haiphenAI/haiphen-cli/releases/download/v0.2.9/haiphen_0.2.9_darwin_arm64.tar.gz"
-      sha256 "66ae8e3ef806e34f586f8e54dc8ee3c4c8b17582a1fca1b41716fc77e3b6bc64"
+      url "https://github.com/haiphenAI/haiphen-cli/releases/download/v0.2.10/haiphen_0.2.10_darwin_arm64.tar.gz"
+      sha256 "a5003266441cb2eae652a30c5f7f1ac665382f274b87c5dea11bd9f7ad168569"
 
-      def install
+      define_method(:install) do
         bin.install "haiphen"
       end
     end
@@ -29,16 +29,16 @@ class Haiphen < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/haiphenAI/haiphen-cli/releases/download/v0.2.9/haiphen_0.2.9_linux_amd64.tar.gz"
-      sha256 "bfd2b1812ed5ccf49519f602c9f41964832b80643c945bd49dbe4c2ffc0d359e"
-      def install
+      url "https://github.com/haiphenAI/haiphen-cli/releases/download/v0.2.10/haiphen_0.2.10_linux_amd64.tar.gz"
+      sha256 "da98a38cdbb993d57d6fb201b4537129fcdcada6096d2cf4666a5ba875169234"
+      define_method(:install) do
         bin.install "haiphen"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/haiphenAI/haiphen-cli/releases/download/v0.2.9/haiphen_0.2.9_linux_arm64.tar.gz"
-      sha256 "c5a80d48c7c3f3711696bd5ee2ec5c6c0b154b71a76116aa08e608347e50d006"
-      def install
+      url "https://github.com/haiphenAI/haiphen-cli/releases/download/v0.2.10/haiphen_0.2.10_linux_arm64.tar.gz"
+      sha256 "adf22bbe044d875f32be41c238426ab6ca9b3b733a5354ec54525126ca3b7535"
+      define_method(:install) do
         bin.install "haiphen"
       end
     end
